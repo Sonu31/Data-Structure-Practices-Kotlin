@@ -13,8 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_20sdp"
-        android:text="Agora Call"
-        android:textColor="@color/white"
+        android:text="Agora Voice Call"
+        android:textColor="@color/black"
         android:textSize="@dimen/_30sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,7 +45,7 @@
         android:background="#D834799D"
         android:paddingHorizontal="@dimen/_20sdp"
         android:paddingVertical="@dimen/_10sdp"
-        android:text="Start Video Call"
+        android:text="Call End"
         android:textColor="@color/white"
         android:textSize="@dimen/_20sdp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,6 +57,8 @@
         android:id="@+id/contraintlayout_ScreenName_xx"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">

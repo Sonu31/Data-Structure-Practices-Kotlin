@@ -83,8 +83,8 @@ class AgroVidoeCallActivity : AppCompatActivity() {
 //    private var token : String? = null
 
     private val appId = "a18dda57d9404b1794aec98a74b84a8a"
-    private var token = "007eJxTYPh0JnqXipj1FS2PSWrrGZmP73HaLhNu0JCfeL/3yp+pf64rMCQaWqSkJJqap1iaGJgkGZpbmiSmJltaJJqbJFmYJFokBnNbZzQEMjJ43GBhYWSAQBCfh6EoPyOzJN7S3NLC0oSBAQBDkyD2"
-    private val channelName = "rohit_979894"
+    private var token = "007eJxTYFhpFHWEZ82nvrtNG6KKU2efnXbgy741DVtPNycvuyPrqcKowJBoaJGSkmhqnmJpYmCSZGhuaZKYmmxpkWhukmRhkmiRqJRsk9EQyMjwYX8CAyMUgvj8DMX5eaXx2aW5iUWmJsZGhgwMAISuJO0="
+    private val channelName = "sonu_kumar54321"
 
 
     private fun checkSelfPermission(): Boolean {

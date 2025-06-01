@@ -35,8 +35,8 @@ class AgoraCallActivity : AppCompatActivity(), View.OnClickListener {
 //                      private val studentViewModel :StudentViewModel by viewModels()
 //
     private val appId2 = "a18dda57d9404b1794aec98a74b84a8a"
-   private val token = "007eJxTYPh0JnqXipj1FS2PSWrrGZmP73HaLhNu0JCfeL/3yp+pf64rMCQaWqSkJJqap1iaGJgkGZpbmiSmJltaJJqbJFmYJFokBnNbZzQEMjJ43GBhYWSAQBCfh6EoPyOzJN7S3NLC0oSBAQBDkyD2"
-    private val channelName = "rohit_979894"
+   private val token = "007eJxTYFhpFHWEZ82nvrtNG6KKU2efnXbgy741DVtPNycvuyPrqcKowJBoaJGSkmhqnmJpYmCSZGhuaZKYmmxpkWhukmRhkmiRqJRsk9EQyMjwYX8CAyMUgvj8DMX5eaXx2aW5iUWmJsZGhgwMAISuJO0="
+    private val channelName = "sonu_kumar54321"
 
 //        private val appId2 = "7c49d5d246fa42bca16876f2ee653d66"
 //    private val token = "007eJxTYFilV9qb2B+xVXL/dLlvUfNLj17e6+LXmrvkP2eVwpI3UwoVGMyTTSxTTFOMTMzSEk2MkpITDc0szM3SjFJTzUyNU8zM8vlsMhoCGRlKtBJZGBkgEMQXYAhJLS7JzEuPNzQyjg/OzytlYAAABNsjPw=="
@@ -72,8 +72,27 @@ class AgoraCallActivity : AppCompatActivity(), View.OnClickListener {
             binding.textviewAghoraCallActionStartVodeoCAll.setOnClickListener(this)
 
         }
+    override fun onClick(v: View?) {
+        when(v?.id){
+            R.id.textview_Aghora_call_action_startCall -> {
+                checkPermissions()
+                initializeAgoraEngine()
+                joinChannel()
+//                CallDilaog.show(this,null)
 
-/*
+                //               Toast.makeText(requireContext(), ":: ${bitmpa}", Toast.LENGTH_SHORT).show()
+            }
+            R.id.textview_Aghora_call_action_startVodeoCAll -> {
+                leaveChannel()
+//                setupAgoraEngine()
+//                joinChannel()
+
+                Toast.makeText(this, "JOIN", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+
     private fun checkPermissions() {
         val permissions = arrayOf(Manifest.permission.RECORD_AUDIO)
         if (permissions.any {
@@ -112,24 +131,9 @@ class AgoraCallActivity : AppCompatActivity(), View.OnClickListener {
     private fun leaveChannel() {
         agoraEngine?.leaveChannel()
         Toast.makeText(this, "Left voice channel", Toast.LENGTH_SHORT).show()
-    }*/
-
-
-    override fun onClick(v: View?) {
-        when(v?.id){
-            R.id.textview_Aghora_call_action_startCall -> {
-                CallDilaog.show(this,null)
-
-                //               Toast.makeText(requireContext(), ":: ${bitmpa}", Toast.LENGTH_SHORT).show()
-            }
-            R.id.textview_Aghora_call_action_startVodeoCAll -> {
-                setupAgoraEngine()
-                joinChannel()
-
-                Toast.makeText(this, "JOIN", Toast.LENGTH_SHORT).show()
-            }
-        }
     }
+
+
 
     override fun onDestroy() {
         super.onDestroy()
@@ -137,6 +141,7 @@ class AgoraCallActivity : AppCompatActivity(), View.OnClickListener {
         RtcEngine.destroy()
     }
 
+/*
         private fun checkPermissions() {
             val permissions = arrayOf(Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO)
             if (permissions.any {
@@ -145,7 +150,9 @@ class AgoraCallActivity : AppCompatActivity(), View.OnClickListener {
                 ActivityCompat.requestPermissions(this, permissions, 1)
             }
         }
+*/
 
+/*
        private fun setupAgoraEngine() {
 
            println("Check Data  setupAgoraEngine :-   ")
@@ -178,10 +185,13 @@ class AgoraCallActivity : AppCompatActivity(), View.OnClickListener {
         localContainer.addView(localView)
         agoraEngine?.setupLocalVideo(VideoCanvas(localView, VideoCanvas.RENDER_MODE_HIDDEN, 0))
     }
+*/
 
+/*
         private fun joinChannel() {
         agoraEngine?.joinChannel(token, channelName, "", 0)
     }
+*/
 
        private fun setupRemoteVideo(uid: Int) {
 
