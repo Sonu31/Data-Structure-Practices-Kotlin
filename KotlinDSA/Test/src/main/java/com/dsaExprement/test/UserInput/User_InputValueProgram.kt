@@ -1,16 +1,10 @@
 package UserInput
 
 import kotlin.math.absoluteValue
-
 fun main() {
-
 //    userInputValuefun()
     stringToCharusingLoop()
-
-
     /*For Loop ka Use karke String ko Characters me Convert Karna*/
-
-
 }
 
   fun userInputValuefun(){

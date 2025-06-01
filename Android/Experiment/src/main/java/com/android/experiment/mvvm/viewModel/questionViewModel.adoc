@@ -1,0 +1,43 @@
+
+1. ViewModel kya hota hai?
+2. ViewModel ka kya use hai MVVM architecture mein?
+
+
+3. Activity/Fragment aur ViewModel ke lifecycle mein kya difference hai?
+
+
+4. ViewModel data ko survive kaise karta hai configuration changes ke baad?
+
+
+5. ViewModel kaise banate hain aur ViewModelProvider ka kya role hai?
+
+Intermediate Questions:
+
+6. ViewModel ke andar LiveData kaise use karte ho?
+
+
+7. ViewModel ko Fragment ke andar kaise initialize karte ho?
+
+
+8. ViewModel ko multiple fragments mein share kaise karte ho? (Shared ViewModel)
+
+
+9. SavedStateHandle kya hota hai aur kab use karte ho ViewModel ke saath?
+
+
+10. ViewModel ke andar dependency inject karne ke liye Hilt kaise use karte ho?
+Advanced Questions:
+
+11. ViewModel ke andar suspend functions aur Coroutines kaise use karte ho?
+
+
+12. ViewModel mein API call karne ka best practice kya hai?
+
+
+13. Kya ViewModel ko context mil sakta hai? Agar nahi to kyun?
+
+
+14. ViewModel destroy kab hota hai?
+
+
+15. ViewModel ke andar Flow ya StateFlow kaise expose karte ho UI ke liye?

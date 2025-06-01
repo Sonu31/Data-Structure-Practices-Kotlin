@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelComeScreen">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contraintlayout_ScreenName_l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/con1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/con2"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textview_screenName_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#A5BACE"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="4dp"
+                android:text="Google pay imp"
+
+                android:textColor="#0D0C0C"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_screenName_agora_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#A5BACE"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="4dp"
+                android:text="Agora Call"
+                android:textColor="#0D0C0C"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_screenName_btn1" />
+
+            <TextView
+                android:id="@+id/textview_screenName_btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#A5BACE"
+                android:paddingHorizontal="20dp"
+
+                android:paddingVertical="4dp"
+                android:text="Y btn3 Feature"
+                android:textColor="#0D0C0C"
+                android:textSize="15dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_screenName_agora_call" />
+
+            <TextView
+                android:id="@+id/textview_screenName_btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#A5BACE"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="4dp"
+                android:text="Vidoe CAll "
+                android:textColor="#0D0C0C"
+                android:textSize="15dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_screenName_btn3" />
+
+            <TextView
+                android:id="@+id/textview_screenName_btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#A5BACE"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="4dp"
+                android:text="Y btn5 Feature"
+                android:textColor="#0D0C0C"
+                android:textSize="15dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_screenName_btn4" />
+
+            <TextView
+                android:id="@+id/textview_screenName_btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#A5BACE"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="4dp"
+                android:text="Y btn6 Feature"
+                android:textColor="#0D0C0C"
+                android:textSize="15dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_screenName_btn5" />
+
+
+            <TextView
+                android:id="@+id/textview_screenName_btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#A5BACE"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="4dp"
+                android:text="Y btn7 Feature"
+                android:textColor="#0D0C0C"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_screenName_btn6" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/con2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/con1">
+
+            <TextView
+                android:id="@+id/textview_right_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#A5BACE"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="4dp"
+                android:text="X btn1 Feature"
+
+                android:textColor="#0D0C0C"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_right_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#A5BACE"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="4dp"
+                android:text="X btn2 Feature"
+                android:textColor="#0D0C0C"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_right_btn1" />
+
+            <TextView
+                android:id="@+id/textview_right_btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#A5BACE"
+                android:paddingHorizontal="20dp"
+
+                android:paddingVertical="4dp"
+                android:text="X btn3 Feature"
+                android:textColor="#0D0C0C"
+                android:textSize="15dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_right_btn2" />
+
+            <TextView
+                android:id="@+id/textview_right_btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#A5BACE"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="4dp"
+                android:text="X btn4 Feature"
+                android:textColor="#0D0C0C"
+                android:textSize="15dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_right_btn3" />
+
+            <TextView
+                android:id="@+id/textview_right_btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#A5BACE"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="4dp"
+                android:text="X btn5 Feature"
+                android:textColor="#0D0C0C"
+                android:textSize="15dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_right_btn4" />
+
+            <TextView
+                android:id="@+id/textview_right_btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#A5BACE"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="4dp"
+                android:text="X btn6 Feature"
+                android:textColor="#0D0C0C"
+                android:textSize="15dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_right_btn5" />
+
+
+            <TextView
+                android:id="@+id/textview_right_btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#A5BACE"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="4dp"
+                android:text="X btn7 Feature"
+                android:textColor="#0D0C0C"
+                android:textSize="15dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview_right_btn6" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

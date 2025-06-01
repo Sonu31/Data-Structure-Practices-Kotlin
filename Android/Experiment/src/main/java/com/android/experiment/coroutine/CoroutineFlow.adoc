@@ -1,0 +1,58 @@
+**1. What is Flow. **
+
+ - Flow ek cold asynchronous data stream hai jo multiple values emit kar sakta hai sequentially.
+    - Jaise ek tap se paani boond boond girta hai, waise hi Flow se data ek ek karke milta hai.
+    - Flow tabhi start hota hai jab koi usko consume karta hai (collector lagata hai).
+
+**2. Flow ka basic use kab hota hai **
+
+- Jab hume continuously ya multiple baar data chahiye hota hai.
+- Jab hume network call, database changes, ya sensor data jaise streaming data ko handle karna hota hai.
+- Jab hume asynchronous tareeke se values handle karni hoti hain without blocking the main thread.
+
+**3. Flow kya hai exactly? **
+
+ - Flow ek Interface hai Kotlin Coroutines library mein.
+ - Interface ka matlab hota hai ek blueprint ya design — jisme kuch functions ya behavior define kiya jaata hai, lekin actual implementation alag classes karte hain.
+
+**4. Kahan se aata hai Flow? **
+-  Flow kotlinx.coroutines.flow.Flow package mein hota hai.
+- Ye part hai Kotlin Coroutines ke.
+- Flow ko banaya gaya hai asynchronous stream of data ko handle karne ke liye.
+
+**5.To kya flow {} ek method hai? **
+
+**6.Flow aur Suspend Function mein kya difference hai?  **
+
+**7.Flow kab cold hota hai?	   **
+**8.Flow aur StateFlow mein kya difference hai?   **
+**9.emit() aur collect() ka kya relation hai?	   **
+**10.Flow kis thread pe kaam karta hai?	   **
+
+**11.Flow cancel kab hota hai?	   **
+
+**12.Buffer() operator kya karta hai Flow mein?	   **
+
+**13. Retry aur catch operators Flow mein kaise use hote hain? **
+**14.SharedFlow kya hai?	 **
+
+**15.Flow mein Exception handle kaise karte hain? **
+
+**16. Flow ke Types **
+
+   - 1. Cold Flow	Jo tabhi start hota hai jab koi usse collect karta hai. (default Flow)
+   - 2. Hot Flow	Jo khud se chalu rehta hai, chahe koi collect kare ya na kare.
+   - 3. StateFlow	Ek special Hot Flow jo latest value ko hold karta hai (state management ke liye).
+   - 4. SharedFlow	Ek broadcast-type Hot Flow jo multiple collectors ke saath kaam karta hai.
+   - 5. CallbackFlow	Jab hum callbacks ko Flow ke form mein convert karte hain. (advance use case)
+**17 **
+**18 **
+**19 **
+**20 **
+**14 **
+
+
+
+
+
+

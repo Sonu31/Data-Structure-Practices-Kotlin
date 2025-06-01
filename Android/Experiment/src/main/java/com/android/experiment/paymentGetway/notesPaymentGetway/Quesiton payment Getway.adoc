@@ -1,0 +1,99 @@
+1. Payment Gateway kya hota hai?
+Ans :-Payment Gateway ek service hoti hai jo Android app me online transactions (UPI, Card, Wallet) ko securely process karti hai.
+
+
+2. Android me kaunse popular Payment Gateways use kiye jaate hain?
+- Razorpay
+-Paytm
+- Google Pay (UPI Intent)
+- PhonePe
+- Stripe
+- PayPal
+
+3. Razorpay ko Android app me kaise integrate karte hain?
+Steps:
+- Razorpay SDK add karo:
+  implementation 'com.razorpay:checkout:1.6.26'
+- Checkout class ka use karo.
+- API key set karo.
+- Payment options JSON object me set karo.
+- Payment result handle karo using onPaymentSuccess() & onPaymentError().
+
+4,  UPI payment Android me kaise implement karte hain?
+➤ UPI Intent ka use hota hai. Example:
+val uri = Uri.parse("upi://pay?pa=upi_id@bank&pn=ReceiverName&am=10&cu=INR")
+val intent = Intent(Intent.ACTION_VIEW, uri)
+startActivityForResult(intent, 123)
+
+5. WebView vs Native SDK – kaun sa better hai payments ke liye?
+➤ Native SDK (e.g. Razorpay SDK) secure aur faster hota hai.
+➤ WebView me security risk hota hai (MITM attacks), isliye recommended nahi hai.
+
+
+6. Payment Gateway se payment success ya failure ka response kaise milta hai?
+➤ SDK methods ya callback functions (e.g., onPaymentSuccess() in Razorpay).
+➤ Ya server-side se webhooks ke through.
+
+
+7. Webhook kya hota hai Payment Gateway me?
+➤ Ek server-to-server notification system jo payment ka final status merchant ke server ko bhejta hai.
+
+8. Test Mode aur Live Mode me kya difference hai?
+➤ Test Mode: Dummy payments for testing (no real money).
+➤ Live Mode: Real user transactions with actual money.
+
+
+9. Android me Payment Gateway me security kaise maintain karte hain?
+➤ Use HTTPS, PCI-DSS compliant gateway, tokenization, API key securely store karo (not in app).
+
+
+10. Android me Payment Gateway ke liye kya permissions chahiye?
+➤ Mostly Internet permission:
+<uses-permission android:name="android.permission.INTERNET" />
+
+11. SDK aur API me kya difference hota hai Payment Gateway ke context me?
+➤ SDK: Android me direct use karne ke liye library (e.g. Razorpay SDK).
+➤ API: Mostly server-side ke liye (e.g. creating orders, verifying payments).
+
+12. Order ID kya hota hai Payment Gateway me?
+➤ Ek unique ID jo har payment ke liye generate hoti hai — verify karne ke liye use hoti hai.
+
+
+13. Android me payment verification kaise hota hai?
+➤ Server-side API call ke through Razorpay/Stripe ka order ID aur payment ID verify karte hain.
+
+14. Payment failure hone par kya karna chahiye?
+➤ Proper error message dikhana chahiye, retry ka option dena chahiye.
+➤ Example: onPaymentError(code, response) me handle karo.
+
+15. Kya Android me multiple payment methods ek hi gateway se use kiye ja sakte hain?
+➤ Haan, Razorpay/Stripe SDKs me Card, Netbanking, UPI, Wallets sab support hota hai.
+
+16 . WebView ke through payment lena safe hota hai kya?
+WebView ke through payment lena completely safe nahi maana jaata, aur yah recommended bhi nahi hota, especially jab aap sensitive information (like card details, UPI PIN, etc.) handle kar rahe ho. Neeche kuch important points diye gaye hain:
+ - Kya Problem Hoti Hai WebView Se Payment Mein?
+        - >Security Risks: WebView par aapko full control nahi hota, aur koi malicious code inject ho sakta hai (especially agar aap third-party website open karte ho).
+        - >  PCI-DSS Compliance: Payment industry ke standards (PCI-DSS) WebView ko generally allow nahi karte jab tak aapka app certified na ho.
+        - >   No Autofill or Secure Input: WebView mein secure input fields (like OTP auto-read, card scanner, etc.) kaam nahi karte properly.
+        - > Poor User Experience: WebView mein responsiveness aur UI/UX native apps jaisa smooth nahi hota.
+
+17. WebView  kya hota haii
+Ans :- WebView ek special type ka Android component hai jo aapko apne app mein web pages ko embed (yaani ki show) karne ka option deta hai. Iska matlab hai ki aap directly apne Android app ke andar websites ya web content ko dikhane ke liye WebView ka use kar sakte hain, bina kisi external browser ko open kiye.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

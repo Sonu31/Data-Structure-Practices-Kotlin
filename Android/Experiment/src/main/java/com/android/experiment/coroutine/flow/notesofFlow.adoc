@@ -1,0 +1,53 @@
+
+1. Flow kya hai?
+
+ - Flow Kotlin ka ek asynchronous data stream ka concept hai.
+ - Ye data ek ke baad ek values emit karta hai jaise paani ki dhara (stream).
+ - Flow coroutines ke sath kaam karta hai.
+ - Jab tak koi collect nahi karta, tab tak flow se koi data nahi aata.
+(Ye cold hota hai.)
+
+2. Flow kaise kaam karta hai?
+ - flow {} block banate hain → yahan hum data emit karte hain.
+ - emit() se ek ek karke value bhejte hain.
+ - collect {} se values ko receive karte hain.
+
+- Jab collect hota hai tabhi flow ka kaam start hota hai.
+
+3. Flow ke Important Features:
+  - Asynchronous	Background mein data stream karta hai.
+ - Sequential	Data ek ek karke emit hota hai.
+- Cold Stream	Jab tak koi collect nahi karega, tab tak kuch nahi hoga.
+ - Suspend Function	Flow aur collect dono coroutine (suspend) environment mein kaam karte hain.
+ - Cancelable	Flow ko easily cancel kar sakte hain coroutine se.
+
+
+4.  Flow Use Cases:
+ - API se multiple data aana (polling)
+- Database se real-time data lena
+ - UI ke events stream banana
+- Background mein continuous data fetch karna
+
+5. Flow ke Operators (bahut important)
+ - map → Data ko modify karna
+ - filter → Kuch specific data chhantna
+ - collect → Data receive karna
+- onEach → Har value pe koi action lena
+- catch → Error handle karna
+- flatMapLatest → Latest kaam handle karna (especially search feature mein)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

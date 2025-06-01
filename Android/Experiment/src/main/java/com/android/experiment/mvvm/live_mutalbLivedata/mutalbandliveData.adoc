@@ -1,0 +1,5 @@
+4. Lifecycle Awareness
+Lifecycle State	Observer Trigger?
+ON_RESUME / ON_START	✅ Yes
+ON_PAUSE / ON_STOP	❌ No
+ON_DESTROY	❌ No (Observer automatically remove ho jaata hai)

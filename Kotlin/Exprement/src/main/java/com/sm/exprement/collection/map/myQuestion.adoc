@@ -1,0 +1,16 @@
+1.  Map ko Andorid project me kha kah use karete hai.
+
+ Ans :-
+    (a). jab humein kisi list ya collection ke data ko transform karna ho.
+
+    Android Ex :-
+    Ex :-  1. API Response ko UI Model me Convert Karna (DTO to UI Model)
+
+        val apiResponse: List<UserDto> = // API se aayi data
+        val users = apiResponse.map { dto ->
+       User(
+         name = dto.fullName,
+           age = dto.age
+       )
+      }
+    Use Case: Clean Architecture me domain ya UI model banane ke liye.

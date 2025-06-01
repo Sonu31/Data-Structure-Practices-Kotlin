@@ -1,0 +1,28 @@
+
+
+
+
+
+ 1. Livedata ek read only data holder  class hota hia  jo Ui component ko objsurb karn ke facilty provide karte hia .
+ liveData ka main purpose ka  jo bhi data me change ho useko obserbed kar ke notify karna ..
+
+
+ 1.LifeCycler aware hota hai  - srif active UI comonnet ko update karta hia
+ 2.Thread safe hota hia - Backgroudn thread se bhi update hota ia
+ 3.REad only hota hia - Data modify nahii kar sakta .
+
+
+
+ What is live Data :-> Live Data ka Data change nahi kar sakte hia  (Live data wo hmare read only hota hia )
+ What is Mutable Live data :-> Mutable live data ka data change kar sakte hia
+ Type of live data  (a).Mutable live data (b) Live Data (c) MediatorLiveData -> LiveData is immutable by default
+ ye Live cycler awayer hia ( ye jo data me change hia ye unhe ko pahucege  jo active state me hoge  age wo component activie state me nahi hoge usko koi update nahi pahuchege)
+ but isme ek khas bata hia  isme hm Data ko obseb kar skate hia  (Observe karne ka matalb hota hia ki jaysa jayse es data me change hogi to hame update milege ki mere data me change ho gya hia ager aap kuch code execute karna chate hia to aap kar sakte   )
+ 4.What is LiveDAta :-> LiveData ek  Data holder class hia  matalb hamre data ko hold  karne ke liya  class  banaya gaya hia
+ 6.Advantages of using LiveData
+ Ensures your UI matches your data state.     No crashes due to stopped activities.
+ Proper configuration changes.
+ Always up to date data.
+ No memory leaks.
+
+

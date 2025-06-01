@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_Android_DSA_Experiment">
         <activity
-            android:name=".MainActivity"
+            android:name=".agroVidoeCAll.AgroVidoeCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".aghora.AgoraCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelComeScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,6 +29,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".paymentGetway.googlepayUpi.GooglePayUPIActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Kotlin_Android_DSA_Experiment" />
+        <activity
+            android:name=".mvvm.MVVMExActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Kotlin_Android_DSA_Experiment" />
+        <activity
+            android:name=".coroutine.flow.example.FlowTestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".coroutine.andridCode.CorouitneExperimentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="io.agora.sdk.log.level"
+            android:value="DEBUG" />
     </application>
 
 </manifest>

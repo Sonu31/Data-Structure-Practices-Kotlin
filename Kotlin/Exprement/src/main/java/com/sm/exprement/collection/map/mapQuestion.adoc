@@ -1,0 +1,36 @@
+ 1. What is a Map in Kotlin?
+
+ Ans :- A Map is a collection of key-value pairs where keys are unique and each key maps to exactly one value.
+
+ 2. How do you create a Map in Kotlin?
+
+ val map = mapOf("a" to 1, "b" to 2)
+ val mutableMap = mutableMapOf("x" to 10, "y" to 20)
+
+ 3. How do you iterate over a Map in Kotlin?
+
+ for ((key, value) in map) {
+ println("Key: $key, Value: $value")
+ }
+
+ 4. How to check if a key or value exists in a Map?
+
+    map.containsKey("a")    // true
+    map.containsValue(2)    // true
+
+ 5. Difference between mapOf() and mutableMapOf()?
+   mapOf() creates an immutable map.
+   mutableMapOf() creates a mutable map that can be changed (add/remove/update).
+
+ 6. How do you update a value in a MutableMap?
+
+  val map = mutableMapOf("a" to 1)
+  map["a"] = 100   // update
+  map.put("b", 2)  // add
+
+ 7. What will happen if you try to add a duplicate key to a Map?
+ Answer:
+ The new value will overwrite the old one for that key.
+
+ 8. How can you transform a Map using functional operations?
+ val newMap = map.mapValues { it.value * 2 }

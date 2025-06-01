@@ -1,0 +1,41 @@
+1. LiveData kya hota hai?
+
+
+2. MutableLiveData aur LiveData mein kya difference hai?
+
+
+3. MutableLiveData ko private kyu rakhte hain aur LiveData ko public?
+
+
+4. LiveData observer kaise kaam karta hai?
+
+
+5. LiveData lifecycle-aware kyun hota hai?
+
+6. LiveData observe karne ke liye kis lifecycle owner ka use hota hai?
+
+
+7. PostValue vs SetValue ka difference kya hai?
+
+
+8. SingleLiveEvent kya hota hai aur kyun use karte hain?
+
+
+9. MediatorLiveData kya hota hai?
+
+
+10. Transformations.map() aur Transformations.switchMap() ka kya use hai?
+
+11. Multiple sources se data observe karna ho to kya karoge?
+
+
+12. LiveData ko Flow ya StateFlow mein kaise convert karte ho?
+
+
+13. LiveData ke saath error handling kaise manage karte ho?
+
+
+14. LiveData ka data ViewModel ke destroy hone ke baad bhi persist rakhna ho to kya karoge?
+
+
+15. Configuration change ke baad LiveData ka behavior kya hota hai?

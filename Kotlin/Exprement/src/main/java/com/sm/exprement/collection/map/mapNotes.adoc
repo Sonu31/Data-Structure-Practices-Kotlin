@@ -1,0 +1,8 @@
+ - Map is an interface defined in the Kotlin Collections API:
+
+   public interface Map<K, out V>
+
+    - K is the key type
+    - V is the value type
+    - It's a read-only interface (immutable)
+    - To modify maps, Kotlin provides a subinterface called MutableMap
