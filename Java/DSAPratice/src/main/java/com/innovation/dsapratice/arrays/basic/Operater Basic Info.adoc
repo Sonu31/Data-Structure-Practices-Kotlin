@@ -1,0 +1,23 @@
+Priority	Operators	Description
+
+1. 	()	Parentheses (brackets)
+2. 	* / %	Multiplication, Division, Modulus
+3.	+ -	Addition, Subtraction
+4.	=	Assignment
+
+
+
+ % → Modulus Operator
+val a = 10
+val b = 3
+
+val remainder = a % b   // remainder = 1
+
+
+
+/ → Division Operator
+
+val a = 10
+val b = 3
+
+val result = a / b   // result = 3

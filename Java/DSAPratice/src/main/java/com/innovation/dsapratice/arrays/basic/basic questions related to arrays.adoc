@@ -1,0 +1,30 @@
+1. Find the missing number
+2. Maximum subarray sum (Kadane’s algorithm)
+3. Two sum problem
+4. Rotate array
+5. Merge two sorted arrays
+6. Count occurrences of a particular element
+7. Find the frequency of each element
+8. Copy one array to another
+9. Merge two sorted arrays
+10. Delete an element from a specific position
+11. Insert an element at a specific position
+12. Right rotate the array by d positions
+13. Left rotate the array by d positions
+14. Left rotate the array by one position
+15. Remove duplicates from the array
+16. Find the number of positive, negative, and zero elements
+17. Find the second largest and second smallest element
+18. Count the number of even and odd elements in an array
+19. Print elements of the array in even/odd index positions
+20. Reverse the array
+21. Check if the array is sorted
+22. Find the average of array elements
+23. Search an element in an array (Linear Search)
+24. Find the sum of all elements in an array
+25. Find the maximum and minimum element in an array
+
+
+
+
+

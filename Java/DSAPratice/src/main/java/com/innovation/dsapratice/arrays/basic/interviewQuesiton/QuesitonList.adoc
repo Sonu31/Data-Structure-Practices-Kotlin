@@ -1,0 +1,4 @@
+1. Reverse an Array
+
+  Write a function to reverse an array in Java/Kotlin.
+  Android context: How would you reverse a list of images in a RecyclerView?
