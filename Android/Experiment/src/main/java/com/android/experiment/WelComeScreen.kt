@@ -2,15 +2,15 @@ package com.android.experiment
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.View.OnClickListener
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.android.experiment.aghora.AgoraCallActivity
 import com.android.experiment.agroVidoeCAll.AgroVidoeCallActivity
 import com.android.experiment.databinding.ActivityWelComeScreenBinding
+import com.android.experiment.nativeLibImp.NativeLib
 import com.android.experiment.paymentGetway.googlepayUpi.GooglePayUPIActivity
 
 private const val TAG_FRAGMENT_NAME = " _SCREEN"
@@ -30,7 +30,9 @@ class WelComeScreen : AppCompatActivity(),OnClickListener {
         enableEdgeToEdge()
         _binding = ActivityWelComeScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        val lib = NativeLib()
+        Log.i("Welcome Screen", "onCreate:- ${lib.getHello()}")
+//        println(lib.getHello()) // output: Hello from Native!
         initView()
 
 

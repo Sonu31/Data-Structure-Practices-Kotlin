@@ -6,6 +6,7 @@ plugins {
 android {
     namespace = "com.android.experiment"
     compileSdk = 35
+    ndkVersion = "27.0.12077973"
 
     defaultConfig {
         applicationId = "com.android.experiment"
@@ -15,6 +16,18 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+//        externalNativeBuild {
+//            cmake {
+//                arguments.add("-DANDROID_STL=c++_shared")
+//            }
+//        }
+
+        ndk {
+            abiFilters.addAll(listOf("armeabi-v7a", "arm64-v8a"))
+        }
+
+
     }
 
     buildTypes {
@@ -24,6 +37,19 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+        }
+    }
+
+//    externalNativeBuild {
+//        cmake {
+//            path = file("src/main/cpp/CMakeLists.txt")
+//            version = "3.31.6"
+//        }
+//    }
+
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging = true
         }
     }
     compileOptions {
