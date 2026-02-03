@@ -11,7 +11,8 @@
   Step 1 :- Download NdK Version (27.0.12077973) & Cmake (3.31.6)
 
   Step 2:- Create the package these path (D:\Technology\Android\Project_experiment_2025_present\app\src\main)
-  app/
+``` 
+ app/
   ├── src/
   │   ├── main/
   │   │   ├── cpp/              ✅ (Yahi pe C++ files aayengi)
@@ -20,7 +21,7 @@
   │   │   ├── java/
   │   │   ├── AndroidManifest.xml
   │   │   ├── res/
-
+```
 
 ### 📄 CMakeLists.txt
 
@@ -152,6 +153,7 @@ class WelcomeActivity : AppCompatActivity() {
 Step 1 :- Download NdK Version (27.0.12077973) & Cmake (3.31.6)
 
 Step 2:- Create the package these path (D:\Technology\Android\Project_experiment_2025_present\app\src\main)
+```
 app/
 ├── src/
 │   ├── main/
@@ -161,6 +163,8 @@ app/
 │   │   ├── java/                  │── armeabi-v7a─────│──libc++_shared.so
 │   │   ├── AndroidManifest.xml                        │──libnative-lib.so
 │   │   ├── res/
+
+```
 
 This path get File :-libc++_shared.so
 D:\Prashansa Technologies\IndiaTalk_App\app\build\intermediates\merged_native_libs\fcmDebug\mergeFcmDebugNativeLibs\out\lib\arm64-v8a
