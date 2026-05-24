@@ -15,13 +15,48 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_Android_DSA_Experiment">
         <activity
+            android:name=".broadcast.BroadCastMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".audioCallManualCode.CallingMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".audioCallManualCode.OutgoingCallManuallyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".audioCallManualCode.IncomingCallManuallyActivity"
+            android:exported="false" />
+        <activity
             android:name=".agroVidoeCAll.AgroVidoeCallActivity"
             android:exported="false" />
         <activity
             android:name=".aghora.AgoraCallActivity"
             android:exported="false" />
+
+        <receiver
+            android:name=".broadcast.simpleBroadcast.SimpleBroadCast"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <receiver android:name=".broadcast.simpleBroadcast.CustomBroadCast"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="com.android.experiment.CUSTOM_BROADCAST"/>
+            </intent-filter>
+
+        </receiver>
+
+
+
+
         <activity
-            android:name=".WelComeScreen"
+            android:name=".splashScreen.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,6 +64,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".WelComeScreen"
+            android:exported="false" />
         <activity
             android:name=".paymentGetway.googlepayUpi.GooglePayUPIActivity"
             android:exported="true"
@@ -46,6 +84,14 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
+        <service
+            android:name=".audioCallManualCode.services.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
 
         <meta-data
             android:name="io.agora.sdk.log.level"

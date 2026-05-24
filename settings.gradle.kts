@@ -21,7 +21,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Experiment_2025_Kotlin_Android_DSA"
+rootProject.name = "Project_experiment_2025_present"
 //include(":app")
 include(":jetpack:Test")
 include(":KotlinDSA:Test")

@@ -1,12 +1,14 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.google.gms.google-services")
 }
 
 android {
     namespace = "com.android.experiment"
     compileSdk = 35
     ndkVersion = "27.0.12077973"
+
 
     defaultConfig {
         applicationId = "com.android.experiment"
@@ -101,5 +103,10 @@ dependencies {
 
 //    implementation ("io.agora:authentication:1.5.3")
 
-
+    implementation(platform("com.google.firebase:firebase-bom:34.9.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-messaging:24.0.0")
+//    implementation platform("com.google.firebase:firebase-bom:33.1.2")
+    implementation ("com.google.firebase:firebase-database")
+    implementation ("com.google.firebase:firebase-messaging")
 }

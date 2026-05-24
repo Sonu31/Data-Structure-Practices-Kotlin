@@ -9,6 +9,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.android.experiment.aghora.AgoraCallActivity
 import com.android.experiment.agroVidoeCAll.AgroVidoeCallActivity
+import com.android.experiment.audioCallManualCode.CallingMainActivity
+import com.android.experiment.broadcast.BroadCastMainActivity
 import com.android.experiment.databinding.ActivityWelComeScreenBinding
 import com.android.experiment.nativeLibImp.NativeLib
 import com.android.experiment.paymentGetway.googlepayUpi.GooglePayUPIActivity
@@ -30,8 +32,8 @@ class WelComeScreen : AppCompatActivity(),OnClickListener {
         enableEdgeToEdge()
         _binding = ActivityWelComeScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val lib = NativeLib()
-        Log.i("Welcome Screen", "onCreate:- ${lib.getHello()}")
+//        val lib = NativeLib()
+//        Log.i("Welcome Screen", "onCreate:- ${lib.getHello()}")
 //        println(lib.getHello()) // output: Hello from Native!
         initView()
 
@@ -108,9 +110,11 @@ class WelComeScreen : AppCompatActivity(),OnClickListener {
                 //               Toast.makeText(requireContext(), ":: ${bitmpa}", Toast.LENGTH_SHORT).show()
             }
             R.id.textview_right_btn6 -> {
+                startActivity(Intent(this, BroadCastMainActivity::class.java))
                 //               Toast.makeText(requireContext(), ":: ${bitmpa}", Toast.LENGTH_SHORT).show()
             }
             R.id.textview_right_btn7 -> {
+                startActivity(Intent(this@WelComeScreen, CallingMainActivity::class.java))
                 //               Toast.makeText(requireContext(), ":: ${bitmpa}", Toast.LENGTH_SHORT).show()
             }
         }   }

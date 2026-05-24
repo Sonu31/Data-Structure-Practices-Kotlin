@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="11">
+      <module name="Experiment_2025_Kotlin_Android_DSA.Android.Experiment" target="21" />
+      <module name="Experiment_2025_Kotlin_Android_DSA.jetpack.Test" target="21" />
+      <module name="Experiment_2025_Kotlin_Android_DSA.Kotlin.Exprement" target="21" />
+      <module name="Experiment_2025_Kotlin_Android_DSA.KotlinDSA.Test" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>
